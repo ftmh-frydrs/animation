@@ -1,0 +1,97 @@
+.body{
+    width: 1000px;
+    height:700px;
+    border: 2px solid black;
+    position: absolute;
+    left: 200px;
+    animation: 20s body ;
+    animation-iteration-count: infinite;
+  
+   
+}
+
+@keyframes body{
+    0%{
+        background-color: rgb(85, 182, 248);
+    }
+
+    100%{
+        background-color: rgb(8, 8, 45);
+    }
+}
+
+.sun{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: relative;
+    left: 800px;
+    top: 30px;
+    animation: 20s sun infinite;
+   
+  
+}
+
+@keyframes sun{
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+.cloud img{
+    width:200px;
+    height: 150px;
+    position: relative;
+    animation: 20s move infinite;
+    left: 800px;
+    top: -130px;
+    animation-iteration-count: infinite;
+   
+}
+@keyframes move{
+    0%{
+        top: -130px;
+       left:1000px;
+       z-index: 2;
+    }
+    100%{
+        top: -130px;
+        left: 800px;
+       
+    }
+}
+.moon img{
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: 34px;
+  top: -290px;
+  animation:20s moon infinite;
+  opacity: 0;
+  
+}
+@keyframes moon{
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        
+        opacity: 1;
+    }
+}
+
+
+.two{
+    background-color: white;
+    width: 230px;
+    height: 700px;
+    position: absolute;
+    left: 1203px;
+    z-index: 3;
+}
